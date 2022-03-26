@@ -17,9 +17,9 @@ from random import randrange, uniform
 import time
 
 mqttBroker = "mqtt.eclipseprojects.io"
-client = mqtt.Client("carpark2")
+client = mqtt.Client("carpark3")
 client.connect(mqttBroker)
-topic = "csc2006/carparks/carpark2"
+topic = "csc2006/carparks/carpark3"
 while True:
     randNumber = uniform(0, 100)
     client.publish(topic, randNumber)
